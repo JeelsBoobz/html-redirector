@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+  // Get the URL parameter value
+  const urlParams = new URLSearchParams(window.location.search);
+  const redirectUrl = urlParams.get('url');
+
+  // Redirect to the desired URL
+  if (redirectUrl) {
+    window.location.href = redirectUrl;
+  }
+</script>
+</body>
+</html>
