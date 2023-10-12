@@ -26,12 +26,6 @@
 <body>
   <div id="redirect"></div>
   <script>
-    const prefersDarkTheme = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-    if (prefersDarkTheme) {
-  // T
-} else {
-  // Terapkan tema terang
-}
     // Get the URL parameter value
     const urlParams = new URLSearchParams(window.location.search);
     const redirectUrl = urlParams.get('url');
