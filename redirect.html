@@ -1,8 +1,37 @@
 <!DOCTYPE html>
 <html>
+<head>
+  <title>Link Redirector</title>
+  <style>
+    body {
+      background-color: white; /* default theme */
+    }
+
+    @media (prefers-color-scheme: dark) {
+      body {
+        background-color: black; /* dark theme */
+      }
+    }
+  </style>
+  <script>
+    const prefersDarkTheme = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+    if (prefersDarkTheme) {
+      document.body.classList.add('dark'); // Add a class for dark theme
+    } else {
+      document.body.classList.remove('dark'); // Remove the class for light theme
+    }
+  </script>
+</head>
 <body>
   <div id="redirect"></div>
   <script>
+    const prefersDarkTheme = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    if (prefersDarkTheme) {
+  // T
+} else {
+  // Terapkan tema terang
+}
     // Get the URL parameter value
     const urlParams = new URLSearchParams(window.location.search);
     const redirectUrl = urlParams.get('url');
